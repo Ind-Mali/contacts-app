@@ -1,0 +1,125 @@
+#container{
+    margin-top: 100px;
+    position: relative;
+    height: 500px;
+    width: 450px;
+    padding: 20px;
+    transform: scale(1.2);
+}
+
+#container::before{
+    content: "";
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background: linear-gradient(#e2df27,#f02020);
+    border-radius: 50%;
+    transform: translate(-120px,-38px);
+    z-index: -1;
+}
+
+#container::after{
+    content: "";
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background: linear-gradient(#cfdfd7,#3e5483,#180606);
+    border-radius: 50%;
+    transform: translate(280px,-160px);
+    z-index: -1;
+}
+
+.form-lb{
+    position: relative;
+    background: rgba(255, 255, 255, .1);
+    border-top: 1px solid #fc63fc;
+    border-left: 1px solid #f02020;
+    overflow: hidden;
+    padding: 50px 40px;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.form-lb span{
+    position: absolute;
+    padding:-12px;
+    margin: -35px 15px 5px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+    letter-spacing: 1px;
+}
+
+input:valid ~ span,
+input:focus ~ span{
+    color: #fff;
+    transform: translateY(-20px) translateX(-10px);
+    font-size: 10px;
+    color: aquamarine;
+    padding: 0 10px;
+}
+
+ 
+#form-input{
+
+    margin:10px ;
+    outline: none;
+    border: 1px solid rgb(255, 255, 255,.25);
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 14px;
+    place-content: none ;
+}
+
+.btn-form{
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    background: #aa9ab4;
+    color: #fff;
+    margin-top: 10px;
+    padding: 10px 25px;
+    width: 100px;
+    font-size: 12px;
+    border-radius: 5px;
+    margin-left: 125px;
+    cursor: pointer;
+}
+
+.btn-form:hover{
+    color: #fff;
+    background: linear-gradient(#8fffc7,#78797a,#4b0a0a);;
+}
+
+input{
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    --webkit-box-sizing:border-box;
+    --moz-boz-sizing:border-box;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    
+}
+
+.list{
+    margin: 15px 0;
+}
+
+.list>li{
+    background-color: rgb(238, 187, 120,.5);
+    border-bottom: 1px solid #fff;
+    padding: 5px;
+    margin-bottom: 2px;
+} 
+
